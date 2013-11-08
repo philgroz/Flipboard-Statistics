@@ -10,7 +10,7 @@ if (isset($_GET['gra']) && $_GET['0'] != ""){
 	$date = date("d/m/y");
 	$month = date("F");
 	$time = date("H:i:s");
-	$connect = mysqli_connect("mysql.fhost.com.au", "u318664143_test", "xdb390", "u318664143_test");
+	$connect = mysqli_connect("", "", "", "");
 	if ($_GET['gra'] == "phite"){
 		$insert = "INSERT INTO flipboard (readers, page_flips, articles, day, date, month, time) VALUES ('$readers', '$page_flips', '$articles', '$day', '$date', '$month', '$time');";
 		$insertQuery = mysqli_query($connect, $insert);
